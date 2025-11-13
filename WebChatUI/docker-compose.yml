@@ -1,0 +1,8 @@
+services:
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:main
+    ports:
+      # Change port 3104 to whatever port you need
+      - 3104:8080
+    volumes:
+      - ./data:/app/backend/data
